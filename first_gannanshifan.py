@@ -1,3 +1,6 @@
+"""
+母校新闻小爬虫
+"""
 import requests
 from lxml import etree
 
