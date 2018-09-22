@@ -103,6 +103,8 @@ def down_2(url_1_list,nu=0,):
     response2 = requests.get(url_1_list[nu])
     with open(str(nu)+".txt", "wb") as f:
         f.write(response2.content)
+    import sys
+    sys.exit()
 
 
 p0 = multiprocessing.Process(target=down_2, args=(url_1_list, 0))
